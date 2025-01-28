@@ -29,3 +29,13 @@ name_string = "soontae"
 boolean = True
 
 print(a_number, name_string, boolean)
+
+# ---------------------------------
+# 복습
+
+my_name = "soontae"
+age = 32
+dead = False
+
+print("Hello my name is", my_name)
+print("and I'm", age, "years old")
