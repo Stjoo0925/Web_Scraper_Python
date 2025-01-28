@@ -6,7 +6,9 @@ print("Hello World!")
 a = 2
 b = 3
 c = a + b
+
 print(c)
+# 파이선은 위에서 아래로 코드를 읽는다
 
 my_age = 88
 """ 
@@ -15,4 +17,15 @@ my_age = 88
 """
 
 # ---------------------------------
-# 변수 파트
+# 타입 파트
+
+# 숫자
+a_number = 654
+
+# 문자열 - "" or '' 로 작성가능
+name_string = "soontae"
+
+# 불린 - True or False , 첫 글자는 반드시 대문자
+boolean = True
+
+print(a_number, name_string, boolean)
