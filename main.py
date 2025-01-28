@@ -39,3 +39,19 @@ dead = False
 
 print("Hello my name is", my_name)
 print("and I'm", age, "years old")
+
+# ---------------------------------
+# 함수 파트
+
+print(True)
+print("Hello")
+print(12)
+# 예시로 print 함수는 콘솔창에 출력하기 위한 재사용 가능한 함수이다
+
+# 함수를 정의하기 위한 방법
+def say_hello():
+  # 함수명 선언 방식은 변수 선언 방식과 동일하다
+  print("Hello how r u?")
+
+# 함수를 호출하는 방법
+say_hello()
