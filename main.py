@@ -51,7 +51,17 @@ print(12)
 # 함수를 정의하기 위한 방법
 def say_hello():
   # 함수명 선언 방식은 변수 선언 방식과 동일하다
+  # 함수를 작성할때 공백이 중요하다 | Tap or space bar * 2
   print("Hello how r u?")
 
 # 함수를 호출하는 방법
 say_hello()
+
+# 함수에 파라미터(Parameter)를 넣는 방법
+def say_hello_with_name(name):
+  # 파라미터는 변수명과 같이 입력해준다, 파라미터의 변수명은 함수 내에서만 사용가능하다
+  print("hello " + name + " how r u?")
+
+# 함수에 인자를 넣어서 호출하는 방법
+# 이떄 "soontae"는 인자(Argument)이다
+say_hello_with_name("soontae")
