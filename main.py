@@ -74,3 +74,62 @@ def say_hello_with_name_and_age(name, age):
 # 함수에 여러개의 인자를 넣어서 호출하는 방법
 # 마찬가지로 ,로 구분하여 각각의 파라미터에 인자를 넣을수 있다 | 인자를 넣는 순서에 주의해야 한다
 say_hello_with_name_and_age("soontae", 32)
+
+# ---------------------------------
+# 복습
+
+def tax_calculator(money):
+  print(money * 0.35)
+
+tax_calculator(15000000)
+
+# ---------------------------------
+# 파라미터에 기본값 주기
+
+def say_hello_default(name="anonymous"):
+# "=" 이후에 기본값을 설정해줘서 인자가 없더라도 함수에 오류를 발생시키지 않는다
+  print("hello " + name)
+
+say_hello_default("soontae")
+say_hello_default()
+
+# ---------------------------------
+# 계산기 만들기
+
+def plus(a, b):
+  print(a + b)
+
+def minus(a, b):
+  print(a - b)
+
+def multiply(a, b):
+  print(a * b)
+
+def divide(a, b):
+  print(a / b)
+
+def power(a, b):
+  print(a ** b)
+
+def culcurator(symbols="", a=0, b=0):
+  if symbols == "+":
+    plus(a, b)
+  elif symbols == "-":
+    minus(a, b)
+  elif symbols == "*":
+    multiply(a, b)
+  elif symbols == "/":
+    divide(a, b)
+  elif symbols == "**":
+    power(a, b)
+  else:
+    print("잘못된 기호를 입력하셨습니다.")
+
+culcurator("+", 1, 2)
+culcurator("-", 1, 2)
+culcurator("*", 1, 2)
+culcurator("/", 1, 2)
+culcurator("**", 1, 2)
+culcurator("", 1, 2)
+culcurator()
+
