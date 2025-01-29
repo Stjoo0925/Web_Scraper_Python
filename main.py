@@ -133,3 +133,46 @@ culcurator("**", 1, 2)
 culcurator("", 1, 2)
 culcurator()
 
+# ---------------------------------
+# 리턴 파트
+
+def tax_calc(money):
+  # return 을 사용해서 함수의 값을 받아낼 수 있다
+  return money * 0.35
+
+def pay_tax(tax):
+  print("thank you for paying", tax)
+
+# 복잡한 변수 선언 없이 표현하는 방법
+pay_tax(tax_calc(15000000))
+
+# ---------------------------------
+# 리턴 복습
+
+my_name = "soontae"
+my_age = 32
+my_color_eyes = "brown"
+
+# f-string | 문자열 포메팅 방법
+print (f"Hello I,m {my_name} I have {my_age} years in the earth, {my_color_eyes} is my eye color")
+
+# 쥬스 기계 만들기
+def make_juice(fruit):
+  return f"{fruit}+🍹"
+
+def add_ice(juice):
+  return f"{juice}+🧊"
+
+def add_suger(iced_juice):
+  return f"{iced_juice}+🍬"
+
+# juice = make_juice("🍎")
+# cold_juice = add_ice(juice)
+# perfect_juice = add_suger(cold_juice)
+
+# 체이닝을 사용한 코드 활용법 | 실행시간 및 메모리 효율증대
+perfect_juice = add_suger(add_ice(make_juice("🍎")))
+
+print(perfect_juice)
+
+# return은 함수를 끝내버린다 즉 리턴이후의 함수내의 코드는 실행되지 않는다
