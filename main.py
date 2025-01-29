@@ -1,15 +1,18 @@
 # ---------------------------------
 # if 파트
 
+"""
 a = "soontae"
 
 if a == "soontae":
   # if 이후의 조건이 참(True)이라면 아래의 코드가 실행된다
   print("True!")
+"""
 
 # ---------------------------------
 # else and elif 파트
 
+"""
 # if
 password_correct = False
 
@@ -33,10 +36,12 @@ else:
   print("Winner is 10")
 
 # 조건문의 위에서 부터 순차적으로 참,거짓을 판단하여 참이 나오면 코드를 종료함
+"""
 
 # ---------------------------------
 # 조건문 복습
 
+"""
 winner = 50
 
 if winner <= 10:
@@ -52,10 +57,12 @@ else:
   print("Else")
 
 # 파이선의 조건문은 순차적으로 참,거짓을 판단하여 참일경우 아래의 조건을 확인하지않고 코드를 종료시키므로 구조를 고려해서 만들어야함
+"""
 
 # ---------------------------------
 # And, Or 복습
 
+"""
 # 유저의 답변을 데이터로 저장하는 방법
 age = input("How old are you?")
 
@@ -76,6 +83,7 @@ elif age == 60 or age == 70:
   print("Birthday party!")
 else:
   print("Go ahead!")
+"""
 
 True and True == True
 True and False == False
@@ -86,4 +94,51 @@ True or True == True
 True or False == True
 False or True == True
 False or False == False
-  
+
+# ---------------------------------
+# 파이선 라이브러리 파트
+
+"""
+from random import randint
+# 스텐다드 라이브러리를 import 하여 사용해야 한다
+
+user_choice = int(input("Choose number."))
+pc_choice = randint(1, 50)
+
+if user_choice == pc_choice:
+  print("You won!")
+elif user_choice > pc_choice:
+  print("Lower! computer chose", pc_choice)
+elif user_choice < pc_choice:
+  print("Higher! computer chose", pc_choice)
+"""
+
+# ---------------------------------
+# 반복(while) 파트
+
+"""
+distance = 0
+while distance < 20:
+  # while 이후의 조건이 True 이면 계속 실행, False이면 반복이 멈춘다
+  print("I'm running:", distance, "km")
+  distance += 1
+"""
+
+# ---------------------------------
+# 파이선 카지노
+
+from random import randint
+
+pc_choice = randint(1, 50)
+playing = True
+
+print("Welcome to Python Casino")
+while playing:
+  user_choice = int(input("Choose number."))
+  if user_choice == pc_choice:
+    print("You won!")
+    playing = False
+  elif user_choice > pc_choice:
+    print("Lower!")
+  elif user_choice < pc_choice:
+    print("Higher!")
