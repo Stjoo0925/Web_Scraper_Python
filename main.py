@@ -65,3 +65,12 @@ def say_hello_with_name(name):
 # 함수에 인자를 넣어서 호출하는 방법
 # 이떄 "soontae"는 인자(Argument)이다
 say_hello_with_name("soontae")
+
+# 멀티 파라미터 사용 방법
+def say_hello_with_name_and_age(name, age):
+  # 파라미터를 ,로 구분하여 여려개 사용할수 있다
+  print(f"Hello {name} how r u? I'm {age} years old")
+
+# 함수에 여러개의 인자를 넣어서 호출하는 방법
+# 마찬가지로 ,로 구분하여 각각의 파라미터에 인자를 넣을수 있다 | 인자를 넣는 순서에 주의해야 한다
+say_hello_with_name_and_age("soontae", 32)
