@@ -42,3 +42,12 @@ print(days_of_week)
 # 특정 인덱스의 값 가져오기
 
 print(days_of_week[3])
+
+# ---------------------------------
+# tuples 파트
+
+# tuple은 [] 대신 ()를 사용한다
+# tuple은 변경이 불가능하다
+day = ("Mon", "Tue", "Wed", "Thu", "Fri")
+
+print(day.count("Mon"))
